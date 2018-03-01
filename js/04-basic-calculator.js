@@ -1,27 +1,34 @@
 /*eslint-env browser */
 
-//var num1 = parseInt(x, 10);
-//var num2 = parseInt(y, 10);
-
-
-function calculate(a, b, c) {
-    var x =         window.prompt("Enter a number.");
-    var y =         window.prompt('Enter another number.');
+function calculate() {
+    'use strict';
+    var x =         parseInt(window.prompt("Enter a number."), 10);
+    var y =         parseInt(window.prompt('Enter another number.'), 10);
     var operator =  window.prompt('Would you like to add, subtract, multiply, or divide?');
+    var total;
  switch(operator)
     {
      case 'add': 
-        z = x + y;
-        window.alert(z);    
+        total = x + y;
+        window.console.log(total);
         break;     
      case 'subtract': 
-        z = x - y;    
+        total = x - y;
+        window.console.log(total);
         break;
      case 'multiply': 
-        z = x * y;
+        total = x * y;
+        window.console.log(total);    
         break;
      case 'divide': 
-        z = x / y;
+        total = x / y;
+        window.console.log(total);
         break;
-    }        
+     default: 
+        window.alert("You entered wrong command!");
+        calculate();    
+        break;
+    }
+    return total;
 }
+calculate();

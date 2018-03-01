@@ -25,6 +25,11 @@
 //    window.console.log(result + ' is the modulus of ' + x + ' and ' + y);
 //}
 //STEP 5
-function sum() {
-    
-}
+//function sum() {
+//    'use strict';
+//    var total = 0, i;
+//    for (i = 0; i < arguments.length; i++) {
+//        total += arguments[i];
+//    }
+//    return total;
+//}
